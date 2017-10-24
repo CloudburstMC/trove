@@ -28,6 +28,12 @@ competitive in terms of speed and efficiency. It's difficult to know
 what needs to be done and not have the time to do it. With this kind 
 of performance library, it's better to be somewhere that's keeping up.
 
+It's been a fun ride. It's been great to see Trove used in financial 
+trading, network packet analyisis, games, IDEs and many, many
+other places.
+
+-Rob
+
 ---
 
 
