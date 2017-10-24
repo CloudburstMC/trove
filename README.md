@@ -10,6 +10,7 @@ currently (2017-10-24) no plans for updates.
 
 There are many excellent primitive collections if you're looking for a
 replacement library, including:
+
 * [Eclipse Collections](http://www.eclipse.org/collections/)
 * [FastUtil](http://fastutil.di.unimi.it)
 * [HPPC](https://github.com/carrotsearch/hppc)
