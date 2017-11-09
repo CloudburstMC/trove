@@ -1,42 +1,6 @@
 # GNU Trove: High performance collections for Java
 
 
-## Deprecated
-
-The Trove project is now deprecated. I don't have time to effectively
-run the project anymore and haven't had anyone volunteer to help, so
-I'm shutting it down. This might change if help steps up, but there are
-currently (2017-10-24) no plans for updates.
-
-There are many excellent primitive collections if you're looking for a
-replacement library, including:
-
-* [Eclipse Collections](http://www.eclipse.org/collections/)
-* [FastUtil](http://fastutil.di.unimi.it)
-* [HPPC](https://github.com/carrotsearch/hppc)
-* [Koloboke](https://koloboke.com)
-* [Neo4j Primitive Collections](https://github.com/neo4j/neo4j)
-
-(If I missed your library of choice, let me know.)
-
-If interested in taking over leadership of the project, contact me at 
-"robeden1 -at- gmail dot com".
-
-Trove is quite stable and continues to be useable. However, technology 
-marches on and there's a lot that should be done to keep it 
-competitive in terms of speed and efficiency. It's difficult to know 
-what needs to be done and not have the time to do it. With this kind 
-of performance library, it's better to be somewhere that's keeping up.
-
-It's been a fun ride. It's been great to see Trove used in financial 
-trading, network packet analyisis, games, IDEs and many, many
-other places.
-
--Rob
-
----
-
-
 ## Objectives
 
 The GNU Trove library has two objectives:
