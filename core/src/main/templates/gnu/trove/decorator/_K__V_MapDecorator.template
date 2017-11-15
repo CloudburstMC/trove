@@ -69,6 +69,7 @@ public class T#K##V#MapDecorator extends AbstractMap<#KT#, #VT#>
      */
     public T#K##V#MapDecorator( T#K##V#Map map ) {
         super();
+        Objects.requireNonNull(map);
         this._map = map;
     }
 

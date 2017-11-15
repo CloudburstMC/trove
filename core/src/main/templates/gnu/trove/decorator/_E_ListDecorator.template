@@ -20,12 +20,8 @@ package gnu.trove.decorator;
 
 import gnu.trove.list.T#E#List;
 
-import java.io.Externalizable;
-import java.io.IOException;
-import java.io.ObjectInput;
-import java.io.ObjectOutput;
-import java.util.AbstractList;
-import java.util.List;
+import java.io.*;
+import java.util.*;
 
 
 //////////////////////////////////////////////////
@@ -67,6 +63,7 @@ public class T#E#ListDecorator extends AbstractList<#ET#>
      */
     public T#E#ListDecorator( T#E#List list ) {
         super();
+        Objects.requireNonNull(list);
         this.list = list;
     }
 

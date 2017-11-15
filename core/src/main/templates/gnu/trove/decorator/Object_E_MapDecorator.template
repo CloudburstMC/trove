@@ -71,6 +71,7 @@ public class TObject#E#MapDecorator<K> extends AbstractMap<K, #ET#>
      */
     public TObject#E#MapDecorator( TObject#E#Map<K> map ) {
         super();
+        Objects.requireNonNull(map);
         this._map = map;
     }
 

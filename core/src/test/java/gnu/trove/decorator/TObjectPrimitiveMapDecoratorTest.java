@@ -39,6 +39,7 @@ import java.io.ObjectInputStream;
  * @author Eric D. Friedman
  * @author Robert D. Eden
  * @author Jeff Randall
+ * @author Jim Davies
  */
 public class TObjectPrimitiveMapDecoratorTest extends TestCase {
 
@@ -46,6 +47,16 @@ public class TObjectPrimitiveMapDecoratorTest extends TestCase {
         super( name );
     }
 
+    public void testConstructorWithNull() {
+        boolean expectionThrown = false;
+        try {
+            TDecorators.wrap((TObjectIntMap<String>) null);
+        } catch(NullPointerException ignored) {
+            expectionThrown = true;
+        }
+
+        assertTrue("Wrapping a null value should result in an expection being thrown.", expectionThrown);
+    }
 
     public void testConstructors() {
         int element_count = 20;

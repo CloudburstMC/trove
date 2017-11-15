@@ -24,9 +24,7 @@ import gnu.trove.set.T#E#Set;
 import gnu.trove.iterator.T#E#Iterator;
 
 import java.io.*;
-import java.util.AbstractSet;
-import java.util.Iterator;
-import java.util.Set;
+import java.util.*;
 
 
 //////////////////////////////////////////////////
@@ -73,6 +71,7 @@ public class T#E#SetDecorator extends AbstractSet<#ET#>
      */
     public T#E#SetDecorator( T#E#Set set ) {
         super();
+        Objects.requireNonNull(set);
         this._set = set;
     }
 

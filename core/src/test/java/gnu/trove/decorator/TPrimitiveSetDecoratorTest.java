@@ -20,16 +20,16 @@
 
 package gnu.trove.decorator;
 
-import junit.framework.TestCase;
+import gnu.trove.TDecorators;
 import gnu.trove.set.TIntSet;
 import gnu.trove.set.hash.TIntHashSet;
-import gnu.trove.TDecorators;
+import junit.framework.TestCase;
 
-import java.util.*;
-import java.io.ByteArrayOutputStream;
-import java.io.ObjectOutputStream;
 import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.util.*;
 
 
 
@@ -53,6 +53,17 @@ public class TPrimitiveSetDecoratorTest extends TestCase {
 
     public void tearDown() throws Exception {
         super.tearDown();
+    }
+
+    public void testConstructorWithNull() {
+        boolean expectionThrown = false;
+        try {
+            TDecorators.wrap((TIntSet) null);
+        } catch(NullPointerException ignored) {
+            expectionThrown = true;
+        }
+
+        assertTrue("Wrapping a null value should result in an expection being thrown.", expectionThrown);
     }
 
 

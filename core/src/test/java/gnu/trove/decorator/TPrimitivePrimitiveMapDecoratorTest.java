@@ -25,7 +25,6 @@ import gnu.trove.map.TIntIntMap;
 import gnu.trove.map.TIntLongMap;
 import gnu.trove.map.hash.TIntIntHashMap;
 import gnu.trove.map.hash.TIntLongHashMap;
-import gnu.trove.map.hash.TIntObjectHashMap;
 import junit.framework.TestCase;
 
 import java.io.ByteArrayInputStream;
@@ -45,12 +44,23 @@ import java.util.*;
  */
 public class TPrimitivePrimitiveMapDecoratorTest extends TestCase {
 
-    final int KEY_ONE = 100;
-    final int KEY_TWO = 101;
+    private final int KEY_ONE = 100;
+    private final int KEY_TWO = 101;
 
 
     public TPrimitivePrimitiveMapDecoratorTest( String name ) {
         super( name );
+    }
+
+    public void testConstructorWithNull() {
+        boolean expectionThrown = false;
+        try {
+            TDecorators.wrap((TIntLongMap) null);
+        } catch(NullPointerException ignored) {
+            expectionThrown = true;
+        }
+
+        assertTrue("Wrapping a null value should result in an expection being thrown.", expectionThrown);
     }
 
 

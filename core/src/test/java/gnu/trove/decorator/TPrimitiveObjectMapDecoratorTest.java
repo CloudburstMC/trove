@@ -48,6 +48,16 @@ public class TPrimitiveObjectMapDecoratorTest extends TestCase {
         super(name);
     }
 
+    public void testConstructorWithNull() {
+        boolean expectionThrown = false;
+        try {
+            TDecorators.wrap((TIntObjectMap<String>) null);
+        } catch(NullPointerException ignored) {
+            expectionThrown = true;
+        }
+
+        assertTrue("Wrapping a null value should result in an expection being thrown.", expectionThrown);
+    }
 
     public void testConstructors() {
         int element_count = 20;
