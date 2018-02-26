@@ -66,5 +66,5 @@ task assembleDistDir {
 
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '2.2'
+    gradleVersion = '4.5.1'
 }
