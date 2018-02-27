@@ -1,1 +1,7 @@
+rootProject.name = 'trove'
+
 include 'generator', 'core', 'experimental'
+
+project(":core").name = "trove"
+project(":experimental").name = "trove-experimental"
+project(":generator").name = "trove-generator"

@@ -1,11 +1,6 @@
-jar {
-    baseName 'trove-experimental'
-}
-
-
 dependencies {
-    compile project( ':core' )
-    compile project( ':generator' )
+    compile project( ':trove' )
+    compile project( ':trove-generator' )
     testCompile group: 'junit', name: 'junit', version: '4.11'
 }
 
