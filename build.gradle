@@ -22,6 +22,7 @@ apply plugin: 'base'
 subprojects {
     apply plugin: 'java'
     apply plugin: 'osgi'
+    apply plugin: 'maven'
 
     sourceCompatibility = 1.7
     targetCompatibility = 1.7
